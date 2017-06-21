@@ -1,0 +1,49 @@
+<div id="info">
+	<button class="accordion">About</button>
+	<div class="panel">
+		<p>My name is Adam Jayne. I currently reside in Fishers, Indiana while I attend Eleven Fifty Academy for Javascript and Web Design. I love programming, and I have put my heart into this application. I hope it answers your questions and you enjoy your experience here.</p>
+	</div>
+
+	<button class="accordion">Experiences</button>
+	<div class="panel">
+		<!-- <content class="col-md-5"> -->
+			<h3>Professional:</h3>
+			<ul>
+				<li>Experience in web development using HTML/CSS/JavaScript</li>
+				<li>Experinece with Express and Ajax for data manipulation</li>
+				<li>10 years of 4-H</li>
+				<li>3 years as a Jounior Leader</li>
+				<li>Photographed 2 Weddings</li>
+				<li>Traveled with and assisted an EIM contractor with auditing multiple farms</li>
+				<li>Unique abiliity for determining best fit genetics for Angus Cattle</li>
+				<li>Photographed an awards ceremony for the Indiana Angus Association</li>
+				<li>Attending Eleven Fifty Academy for Web Design</li>
+			</ul>
+	<!-- 	</content> -->
+		<!-- <content class="col-md-5"> -->
+			<h3>Personal:</h3>
+			<ul>
+				<li>Attended and participated in several National livestock shows</li>
+				<li>Traveled and assisted in construction of foundation and structure for a photovoltaic array</li>
+				<li>Constructed a pc out of old parts, and successfully overclocked for stable performance while playing modern AAA video game titles</li>
+				<li>Constructed a pc out of modern parts for my grandfather as his home-station</li>
+			</ul>
+		<!-- </content> -->
+	</div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
