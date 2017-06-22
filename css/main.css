@@ -82,6 +82,15 @@ ul {
 	border-left: 35px solid rgba(0, 0, 0, 0.8);
 }
 
+div.panel img{
+	text-align: center;
+	height: 150px;
+	width: 150px;
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
 button.accordion{
 	background-color: rgba(10, 25, 48, .98);
     color: white;
