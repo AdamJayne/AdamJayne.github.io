@@ -74,6 +74,7 @@ ul {
 	font-family: 'Ubuntu', sans-serif;
 	width: 50%;
 	margin: 5% auto;
+	margin-bottom: 0;
 	background: rgba(0, 0, 109, 0.8);
 	border-top: 35px solid rgba(0, 0, 0, 0.8);
 	border-bottom: 35px solid rgba(0, 0, 0, 0.8);
@@ -82,26 +83,29 @@ ul {
 }
 
 button.accordion{
-	background-color: #eee;
-    color: #444;
+	background-color: rgba(10, 25, 48, .98);
+    color: white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
     border: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid black;
     outline: none;
     transition: 0.4s;
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+    background-color: rgba(10, 25, 48, .65);
+    color: gray;
 }
 
 div.panel {
 	margin: 0;
     padding: 18px;
-    background-color: white;
+    background-color: rgba(12, 32, 54, .98);
+    font-size: 16px;
+    color: white;
     display: none;
     transition: max-height 0.2s ease-out;
 }
