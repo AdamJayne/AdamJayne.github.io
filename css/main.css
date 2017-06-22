@@ -17,7 +17,7 @@ nav li{
 
 nav li a{
 	font-family:'OpenSans', sans-serif; 
-	font-size: 20px;
+	font-size: 15px;
 	display: inline-block;
 	color: white;
 	text-align: center;
@@ -180,12 +180,21 @@ button.accordion.active:after {
 
 .contactContainer {
 	color: white;
-	width: 50%;
-	height: 300px;
+	width: 30%;
 	margin: 6% auto;
-	background-color: rgba(12, 32, 54, .81);
+	background-color: rgba(12, 32, 54, .98);
 	padding: 20px;
 	border: 2px solid black;
+	box-shadow: 3px 3px black;
+}
+
+.contactContainer h1 {
+	font-size: 37px;
+	text-align: center;
+	background: rgba(0,0,0,0.2);
+	padding: 2px;
+	border-radius: 23px;
+	text-shadow: 1px 1px black;
 }
 
 input[type="text"], textarea{
@@ -199,14 +208,29 @@ input:hover {
 	border-bottom: 2px solid blue;
 }
 
-.shortInput {
-	display: ;
-	width: 40%;
-	float: left;
+#message {
+	background-color: rgba(0,0,0,0.3);
+	color: white;
+	border: none;
+	border-bottom: 2px solid transparent;
 }
 
-.messageInput {
-	width: 40%;
-	float: right;
-	margin-top: auto;
+#message:hover {
+	border-bottom:2px solid blue;
 }
+
+/* Animations below */
+
+		
+/*		.fade.ng-enter {
+ 			transition:0.5s linear all;
+ 			opacity:0;
+		}
+
+		.fade.ng-enter.ng-enter-active {
+			opacity:1;
+		}*/
+
+
+   		#home.ng-enter { animation: fadeIn 0.5s;}
+   		#home.ng-leave { animation: fadeOut 0.5s;}
