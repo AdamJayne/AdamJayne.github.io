@@ -236,3 +236,12 @@ input:hover {
 #message:hover {
 	border-bottom:2px solid blue;
 }
+
+.contactContainer a, img{
+	height: 30px;
+	width: 30px;
+	background: white;
+	border-radius: 50%;
+	float: right;
+}
+
