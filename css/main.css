@@ -1,5 +1,6 @@
 body{
-	background: url(../img/yeah.gif) no-repeat fixed top center;
+	background-color: #256080;
+	background-image: url(../img/carbon-fibre.png);
 }
 
 nav ul{
@@ -17,7 +18,7 @@ nav li{
 
 nav li a{
 	font-family:'OpenSans', sans-serif; 
-	font-size: 15px;
+	font-size: 2rem;
 	display: inline-block;
 	color: white;
 	text-align: center;
@@ -50,7 +51,7 @@ ul {
 }
 
 #home h1{
-	margin-top: 20%;
+	margin-top: 13%;
 	vertical-align: center;
 	text-align: center;
 	color: white;
@@ -83,6 +84,8 @@ ul {
 }
 
 div.panel img{
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	height: 150px;
 	width: 150px;
@@ -98,6 +101,7 @@ button.accordion{
     padding: 18px;
     width: 100%;
     text-align: left;
+    font-size: 2rem;
     border: none;
     border-bottom: 1px solid black;
     outline: none;
@@ -112,8 +116,8 @@ button.accordion.active, button.accordion:hover {
 div.panel {
 	margin: 0;
     padding: 18px;
-    background-color: rgba(12, 32, 54, .98);
-    font-size: 16px;
+    background-color: rgba(39,59,82, .98);
+    font-size: 2rem;
     color: white;
     display: none;
     transition: max-height 0.2s ease-out;
@@ -186,7 +190,7 @@ button.accordion.active:after {
 }
 
 .portfolioLink{
-	font-size: 25px;
+	font-size: 4rem;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -200,7 +204,7 @@ button.accordion.active:after {
 	color: white;
 	width: 25%;
 	margin: 6% auto;
-	background-color: rgba(12, 32, 54, .98);
+	background-color: rgba(38,74,113, .98);
 	padding: 20px;
 	border: 2px solid black;
 	box-shadow: 3px 3px black;
@@ -244,3 +248,4 @@ input:hover {
 	background: grey;
 	float: right;
 }
+
