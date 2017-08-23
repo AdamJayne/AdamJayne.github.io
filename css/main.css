@@ -4,7 +4,6 @@ body{
 }
 
 nav ul{
-	list-style-type: none;
 	margin: 0 0 10px 0;
 	padding: 0;
 	overflow: hidden;
@@ -37,15 +36,20 @@ nav li a:visited{
 	text-decoration: none;
 }
 
-li {
-	list-style: none;
-}
-
 ul {
 	padding-left: 0;
 }
 
 /* This area is to style the Home page */
+main.view-home.home.ng-enter {
+	transition: 0.5s;
+	opacity: 0;
+}
+
+main.view-home.home.ng-enter-active {
+	opacity: 1;
+}
+
 #home {
 	font-family: 'Ubuntu', sans-serif;
 }
@@ -83,15 +87,13 @@ ul {
 	border-left: 35px solid rgba(0, 0, 0, 0.8);
 }
 
-div.panel img{
-	margin-left: auto;
-	margin-right: auto;
+.infoImg {
 	text-align: center;
 	height: 150px;
 	width: 150px;
-	position: relative;
-	top: 0;
-	right: 0;
+	border: 3px solid black;
+	border-radius: 50%;
+	margin-bottom: 15px;
 }
 
 button.accordion{
@@ -111,6 +113,18 @@ button.accordion{
 button.accordion.active, button.accordion:hover {
     background-color: rgba(10, 25, 48, .65);
     color: gray;
+}
+
+.introInfo {
+	text-align: center;
+}
+
+.infoList {
+	margin-left: 20px;
+}
+
+.resumeLink:hover {
+	opacity: 0.8;
 }
 
 div.panel {
@@ -139,17 +153,13 @@ button.accordion.active:after {
 
 #projects {
 	text-align: center;
-	width: 1150px;
 	margin-top: 5%;
-	margin-left: auto;
-	margin-right: auto;
 	background-color: rgba(0,0,0,0.9);
 }
 
 #projects img{
 	height: 300px;
-	margin: 20px;
-	width: auto;
+	margin: 20px 0 0 0; 
 	border: 2px solid black;
 }
 
@@ -202,10 +212,7 @@ button.accordion.active:after {
 .contactContainer {
 	font-family: 'Ubuntu', sans-serif;
 	color: white;
-	width: 25%;
-	margin: 6% auto;
 	background-color: rgba(38,74,113, .98);
-	padding: 20px;
 	border: 2px solid black;
 	box-shadow: 3px 3px black;
 }
