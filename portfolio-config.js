@@ -1,5 +1,4 @@
 var app = angular.module('myPort', ['ngRoute'])
-
 	.config(['$routeProvider', function($routeProvider){
 		$routeProvider
 			.when('/', {
@@ -34,27 +33,3 @@ var app = angular.module('myPort', ['ngRoute'])
 				redirectTo: "/home"
 			});
 	}]);
-
-	// app.controller('HomeController', function($scope) {
-	// 	$scope.pageClass = 'page-home';
-	// });
-
-	// app.controller('InfoController', function($scope) {
-	// 	$scope.pageClass = 'page-info';
-	// });
-
-	// app.controller('ProjectController', function($scope) {
-	// 	$scope.pageClass = 'page-projects';
-	// });
-
-	// app.controller('PhotoController', function($scope) {
-	// 	$scope.pageClass = 'page-photos';
-	// });
-
-	// app.controller('ContactController', function($scope) {
-	// 	$scope.pageClass = 'page-contact';
-	// });
-
-	// app.controller('ExtraController', function($scope) {
-	// 	$scope.pageClass = 'page-misc';
-	// });
