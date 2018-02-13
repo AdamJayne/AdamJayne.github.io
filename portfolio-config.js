@@ -2,7 +2,7 @@ var app = angular.module('myPort', ['ngRoute'])
 	.config(['$routeProvider', function($routeProvider){
 		$routeProvider
 			.when('/', {
-				templateUrl: "views/home.html"
+				redirectTo: "/home"
 			}).otherwise({
 				redirectTo: "/home"
 			})

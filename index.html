@@ -23,7 +23,7 @@
 	</head>
 	<body>
 		<!-- nav bar -->
-		<nav>
+		<!-- <nav>
 			<ul>
 				<li><a id="homeButton" href="#/home">Home</a></li>
 				<li><a id="aboutButton" href="#/info">About Me</a></li>
@@ -32,6 +32,28 @@
 				<li><a href="#/contact">Contact Me</a></li>
 				<li><a href="#/misc">Extras</a></li>
 			</ul>
+		</nav> -->
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a id="homeButton" href="#/home">Home</a></li>
+						<li><a id="aboutButton" href="#/info">About Me</a></li>
+						<li><a href="#/projects">Projects</a></li>
+						<li><a href="#/photos">My Photography</a></li>
+						<li><a href="#/contact">Contact Me</a></li>
+						<li><a href="#/misc">Extras</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 		<!-- Content section -->
 		<div ng-view>

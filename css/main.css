@@ -1,43 +1,25 @@
 body{
 	background-color: #256080;
 	background-image: url(../img/carbon-fibre.png);
+
 }
 
-nav ul{
-	margin: 0 0 10px 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-	text-align: center;
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
 }
 
-nav li{
+.nav li {
+	text-align: right;
 	display: inline;
+	font-size: 1.2em;
 }
 
-nav li a{
-	font-family:'OpenSans', sans-serif; 
-	font-size: 2rem;
-	display: inline-block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-nav li a:hover{
-	background-color: #111;
-	text-decoration: none;
-}
-
-nav li a:visited{
-	text-decoration: none;
-}
-
-ul {
-	padding-left: 0;
+.navbar-inverse .navbar-nav > li > a {
+	color: #ffffff;
+	font-family: Lato;
+	font-weight: 300;
 }
 
 /* This area is to style the Home page */
@@ -152,15 +134,17 @@ button.accordion.active:after {
 /* This area is to style the Projects page*/
 
 #projects {
-	text-align: center;
+	padding-bottom: 15px;
 	margin-top: 1%;
+	margin-bottom: 1%;
 	background-color: rgba(0,0,0,0.9);
+	border-radius: 4px;
 }
 
 #projects img{
-	height: 300px;
+	width: 100%;
 	margin: 20px 0 0 0; 
-	border: 2px solid black;
+	border-radius: 5px;
 }
 
 #projects img:hover{
@@ -199,6 +183,11 @@ button.accordion.active:after {
 	opacity: 0.8;
 }
 
+.mobileIcon {
+	width: 100px !important;
+	margin: 15px !important;
+	border-radius: 20px !important;
+}
 .portfolioLink{
 	font-size: 4rem;
 	text-align: center;
@@ -260,3 +249,9 @@ input:hover {
 	margin-bottom: 15px;
 }
 
+/* Misc Page */
+#twitterColumn {
+	margin: 1% 0 1% 0;
+	height: 800px !important;
+	overflow-y: scroll !important;
+}
