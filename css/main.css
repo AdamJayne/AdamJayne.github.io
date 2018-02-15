@@ -104,6 +104,22 @@ button.accordion.active, button.accordion:hover {
 .infoList {
 	margin-left: 20px;
 }
+@media(min-width: 992px) {
+	.showOnTop {
+		width: 60% !important;
+	}
+}
+@media(max-width: 992px) {
+	.showOnTop {
+		width: 100% !important;
+	}
+}
+.shownOnTop{
+	width: 100%;
+}
+.resumeLink {
+	width: 100%;
+}
 
 .resumeLink:hover {
 	opacity: 0.8;
